@@ -36,4 +36,8 @@ class Trip {
         store.trips.push(this);
     }
 
+    passenger() {
+      return passenger
+    }
+
   }
