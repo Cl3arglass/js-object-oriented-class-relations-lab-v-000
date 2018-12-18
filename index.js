@@ -37,7 +37,7 @@ class Trip {
     }
 
     passenger() {
-      return passenger
+      return this.passenger
     }
 
   }
