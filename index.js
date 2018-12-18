@@ -19,10 +19,10 @@ class Driver {
       };
 
     passengers() {
-      // return trips().filter(
-      //          function(trip) {
-      //              return .userId === this.id;
-      //          }.bind(this))
+      return trips().filter(
+               function(trip) {
+                   return trip.passengerId === store.passengers.id;
+               }.bind(this))
       };
 
 
