@@ -41,7 +41,7 @@ class Trip {
       //         function(passenger) {
       //             return passenger.id === this.passengerId;
       //         }.bind(this)
-        }
+        // }
       };
 
 
