@@ -42,6 +42,6 @@ class Trip {
     //               return passenger.id === this.passengerId;
     //           }.bind(this)
     //   };
-    }
+    
 
   }
