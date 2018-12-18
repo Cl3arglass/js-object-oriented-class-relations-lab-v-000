@@ -41,6 +41,7 @@ class Trip {
             function(passenger) {
                 return passenger.tripId === this.id;
             }.bind(this)
+      };
     }
 
   }
