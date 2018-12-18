@@ -19,7 +19,7 @@ class Driver {
       };
 
     passengers() {
-    
+
       let result = []
       this.trips().forEach(
                function(trip) {
@@ -39,6 +39,25 @@ class Passenger {
 
         store.passengers.push(this);
     }
+
+    trips() {
+      return store.trips.filter(
+            function(trip) {
+                return trip.passengerId === this.id;
+            }.bind(this))
+      };
+
+    drivers() {
+
+      let result = []
+      this.trips().forEach(
+               function(trip) {
+                   result.push(trip.driver())
+               }.bind(this))
+        return result
+
+      };
+
   }
 
 class Trip {
