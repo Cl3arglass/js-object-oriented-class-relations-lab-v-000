@@ -19,10 +19,17 @@ class Driver {
       };
 
     passengers() {
-      return this.trips().filter(
+      // return this.trips().filter(
+      //          function(trip) {
+      //              return trip.passengerId === store.passengers.id;
+      //          }.bind(this))
+      let result = []
+      this.trips().forEach(
                function(trip) {
-                   return trip.passengerId === store.passengers.id;
+                   result.push(trip.passenger())
                }.bind(this))
+        return result
+
       };
 
 
